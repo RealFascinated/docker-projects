@@ -1,4 +1,4 @@
-# Easy to use Docker Compose Collection
+# Easy-to-use Docker Compose Collection
 
 ## Usage
 
