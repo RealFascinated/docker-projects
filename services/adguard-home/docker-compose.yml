@@ -1,0 +1,18 @@
+version: "3"
+services:
+  adguard_home:
+    image: adguard/adguardhome:latest
+    container_name: adguard_home
+    restart: unless-stopped
+    volumes:
+      - ./data/work:/opt/adguardhome/work
+      - ./data/conf:/opt/adguardhome/conf
+    ports:
+      - "53:53" # DNS
+      - "3000:3000" # Web interface
+    networks:
+      - proxy
+
+networks:
+  proxy:
+    external: true
