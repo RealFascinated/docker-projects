@@ -16,6 +16,8 @@ docker-compose up -d
 
 ## Services
 
-| Service                                                   | Description | Port |
-| --------------------------------------------------------- | ----------- | ---- |
-| [AdGuard Home](/services/adguard-home/docker-compose.yml) | DNS Server  | 3000 |
+| Service                                                   | Description      | Port(s)  |
+| --------------------------------------------------------- | ---------------- | -------- |
+| [AdGuard Home](/services/adguard-home/docker-compose.yml) | DNS Server       | 53, 3000 |
+| [Redis](/services/redis/docker-compose.yml)               | Cache            | 6379     |
+| [Vault Warden](/services/vault-warden/docker-compose.yml) | Password Manager | 8080     |
