@@ -1,7 +1,7 @@
 version: "3"
 services:
   redis:
-    image: redis:7.4.0-alpine
+    image: redis:7.4.2-alpine
     container_name: redis
     restart: unless-stopped
     command: redis-server --loglevel warning --requirepass redis_password
